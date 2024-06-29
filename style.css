@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  padding: 0;
+  margin: 0 5rem;
+}
+
+.d-flex,
+.d-flex-column,
+.d-flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-flex-column {
+  flex-direction: column;
+}
+.d-flex-row {
+  flex-direction: row;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-mid-unorder-list,
+.nav-mid-li,
+.nav-bottom-list {
+  padding: 0;
+  list-style: none;
+}
+
+.nav-mid-li,
+.nav-bottom-list {
+  padding: 10px 0.5rem;
+  font-size: 10px;
+}
+
+.nav-bottom-list {
+  border-top: thin groove rgb(160, 159, 159);
+  border-bottom: double rgb(22, 22, 22);
+}
+
+.nav-bottom-itemlist {
+  margin: 0.7rem;
+  font-family: "PT Serif", serif;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.material-symbols-outlined:hover,
+.nav-mid-li:hover {
+  background: rgb(243, 242, 242);
+  border-radius: 5px;
+}
+
+.nav-bottom-itemlist-text:hover {
+  border-bottom: 2px solid black;
+  transition: border-bottom-color 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.nav-bottom-itemlist::after {
+  content: " \02C5";
+  font-size: 15px;
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+.Name {
+  font-family: "UnifrakturCook", serif;
+  font-size: 3rem;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.material-symbols-outlined {
+  padding: 0 0.5rem;
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding-right: 1.5rem;
+  font-family: "PT Serif", serif;
+}
+
+.current-data {
+  font-family: "PT Serif", serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+button.Nav-let-button {
+  background-color: rgb(86, 123, 149);
+  width: max-content;
+  height: 2rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+.stock {
+  margin: 1rem;
+}
+
+.stock-x {
+  display: flex;
+  justify-content: end;
+}
+
+.nav-bottom-itemlist-text {
+  padding: 0;
+}
+
+.link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #060606;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+  padding-left: 2.3rem;
+  font-size: 0.8rem;
+}
+
+.dropdown.active > .link,
+.link:hover {
+  color: rgb(119, 113, 113);
+}
+
+.footer-heading:hover,
+.Heading-hover:hover {
+  color: rgb(119, 113, 113);
+}
+
+.menu-options:hover {
+  border-bottom: 2px groove black; /* Adjust the thickness as needed */
+  margin-bottom: -2px; /* Compensate for the border thickness */
+}
+
+.Newsletter:hover {
+  color: none;
+  pointer-events: none;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 1.5rem);
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .link + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.infomation-grid {
+  display: grid;
+  grid-template-columns: repeat(6, max-content);
+  gap: 2rem;
+}
+
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.nav-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-style: solid;
+  margin: 1rem 0;
+  border: none;
+  border-top: thin solid black;
+  border-bottom: double black;
+}
+
+a.link {
+  padding-left: 0;
+  margin-top: 1rem;
+}
+.nav-img {
+  width: 1.9rem;
+  padding-right: 10px;
+}
+.stock {
+  margin: 1rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+.News {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.F-1st {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-right-style: groove;
+  border-right-width: 2px;
+}
+img.img-new {
+  width: 30rem;
+  height: 27rem;
+  padding: 1rem;
+}
+.New-heading {
+  padding: 1rem;
+}
+img.img-new.sec-img {
+  width: 18rem;
+  height: 15.1rem;
+}
+.division.sec-nd {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.New-heading {
+  padding: 1rem;
+  padding-left: 0;
+}
+.New-heading.sec {
+  padding: 1rem;
+}
+
+.footer-list {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+h5.footer-heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+li {
+  display: block;
+  padding-top: 1rem;
+}
+
+.end-line {
+  margin-top: 1rem;
+  width: 100%;
+  border-bottom-style: groove;
+  border-bottom-width: 2px;
+}
+.New-heading.sec {
+  padding: 0.7rem;
+  padding-left: 0.9rem;
+}
+.Heading-hover {
+  font-size: x-large;
+}
+.Heading-hover.sec {
+  font-weight: lighter;
+}
+.footer-last {
+  border-left-style: groove;
+  border-left-width: 1px;
+}
+.bottom-1 {
+  margin-bottom: inherit;
+}
+li.bottom-1-img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0;
+}
